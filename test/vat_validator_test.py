@@ -17,7 +17,7 @@ class MockVatRpcClient(VatRpcClient):
         return self.valid
 
 
-class TestMain(unittest.TestCase):
+class MainTest(unittest.TestCase):
 
     def test_main(self):
         TestCase = namedtuple('TestCase', 'args mock_return want_message want_status')

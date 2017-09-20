@@ -31,7 +31,7 @@ class MockClient:
         self.service = MockClient.MockService(value)
 
 
-class TestVatRpc(unittest.TestCase):
+class VatRpcTest(unittest.TestCase):
 
     def test_init(self):
         TestCase = namedtuple('TestCase', 'vatin mock_service_return want_valid')

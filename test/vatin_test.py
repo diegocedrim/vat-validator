@@ -4,7 +4,7 @@ from vatin import Vatin
 from collections import namedtuple
 
 
-class TestVatin(unittest.TestCase):
+class VatinTest(unittest.TestCase):
 
     def test_init(self):
         TestCase = namedtuple('TestCase', 'vatin want_valid want_code want_number')
