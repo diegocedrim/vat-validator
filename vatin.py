@@ -26,7 +26,7 @@ class Vatin:
         :param vat_number: the complete VATIN, e.g., IT06700351213
         :return: No value is returned
         """
-        result = re.match('^([A-Z]{2})([0-9A-Za-z+*.]{2,12})$', vat_number)
+        result = re.match('^([A-Z]{2})([0-9A-Za-z+*.]{2,12})$', str(vat_number))
         if result is None:
             self.valid_format = False
             return
@@ -45,5 +45,5 @@ class Vatin:
         """
         self.country = None
         self.number = None
-        self.valid_format = None
+        self.valid_format = False
         self.break_down(vat_number)
