@@ -10,7 +10,7 @@ pip install lxml==3.7.3 zeep
 ```
 
 # Running Tests
-You can run all implemented tests with the following command in the project folder.
+You can run all implemented tests with the following command. Make sure you run this command in the project root folder.
 ```
 python3.5 -m unittest discover test "*_test.py"  
 ```
