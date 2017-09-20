@@ -3,7 +3,7 @@ Implements a simple VAT validator by using the webservice available at http://ec
 
 # Installation Instructions
 This script was developed on Python 3.5. Also, it depends on Zeep (http://docs.python-zeep.org/), which is a Python SOAP client. 
-Before running, please install the Zeep package with the following command:
+Before running, please install the Zeep package with the following command.
 
 ```
 pip install lxml==3.7.3 zeep
@@ -12,7 +12,7 @@ pip install lxml==3.7.3 zeep
 # Running Tests
 You can run all implemented tests with the following command in the project folder.
 ```
-python3.5 -m unittest discover . "*_test.py"  
+python3.5 -m unittest discover test "*_test.py"  
 ```
 
 # Running the Validator
